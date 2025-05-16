@@ -35,17 +35,17 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmits } from "vue";
+import { defineProps, defineEmits } from 'vue'
 
 const props = defineProps({
-  emotion: Object
-});
+  emotion: Object,
+})
 
-const emit = defineEmits(["close"]);
+const emit = defineEmits(['close'])
 
 const close = () => {
-  emit("close");
-};
+  emit('close')
+}
 </script>
 
 <style scoped>
