@@ -1,39 +1,44 @@
-# .
+# Emotions Map 🌈
 
-This template should help get you started developing with Vue 3 in Vite.
+Интерактивное приложение для изучения и осознания своих эмоций.  
+Выбери свою текущую эмоцию из круга и узнай, как она ощущается в теле, что с ней делать и чего избегать.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 📦 Установка
 
-## Type Support for `.vue` Imports in TS
+1. Клонируйте репозиторий:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+```bash
+git clone https://github.com/username/emotions.git
+cd emotions
+```
 
-## Customize configuration
+2. Установите зависимости:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## 🚀 Запуск проекта
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## ✅ Как добавить новые эмоции?
+1. Открой `src/data/emotions.json`.
 
-```sh
-npm run build
-```
+2. Добавь новую эмоцию в формате:
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+```json
+{
+  "name": "Вдохновение",
+  "emoji": "✨",
+  "color": "#FFE57F",
+  "description": "Состояние творческого подъёма.",
+  "body": "Лёгкость в теле, желание действовать.",
+  "recommendations": "Запиши идеи, которые пришли в голову.",
+  "avoid": "Не дави на себя."
+}
 ```
